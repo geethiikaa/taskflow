@@ -1,0 +1,103 @@
+/* Gradient Background */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+.input-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+button {
+  margin-left: 5px;
+  padding: 10px 15px;
+  border: none;
+  background: #00c6ff;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.filters {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: rgba(255, 255, 255, 0.15);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+/* Progress Bar */
+.progress-container {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  height: 10px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  height: 10px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #43e97b, #38f9d7);
+  width: 0%;
+  transition: width 0.3s ease;
+}
